@@ -32,8 +32,8 @@ index 2bf5a5df55ab..bad60d5b792d 100644
  {
 +#if LINUX_VERSION_CODE >= KERNEL_VERSION(7, 3, 0)
 +    struct dmem_cgroup_init init = {
-+        .size = size;
-+    }
++        .size = size
++    };
 +
 +    void *region = dmem_cgroup_register_region(&init, name);
 +#else
